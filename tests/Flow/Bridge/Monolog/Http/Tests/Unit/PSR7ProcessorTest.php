@@ -6,10 +6,10 @@ namespace Flow\Bridge\Monolog\Http\Tests\Unit;
 
 use Flow\Bridge\Monolog\Http\Config\ResponseConfig;
 use Flow\Bridge\Monolog\Http\{Config, PSR7Processor};
+use Flow\ETL\Tests\FlowTestCase;
 use Nyholm\Psr7\Factory\Psr17Factory;
-use PHPUnit\Framework\TestCase;
 
-final class PSR7ProcessorTest extends TestCase
+final class PSR7ProcessorTest extends FlowTestCase
 {
     public function test_normalizing_http_request() : void
     {
